@@ -4,37 +4,85 @@ body {
     align-items: center;
     min-height: 100vh;
     /*   background: url() */
-}
-
-.container {
+  }
+  
+  .container {
     display: flex;
     width: 100px;
     height: 200px;
   }
   
-
-#mario-head {
+  #mario-head {
     width: 10px;
     height: 10px;
-    box-shadow:
-        20px 0 #F63911, 30px 0 #F63911, 50px 0 #F63911, 50px 0 #F63911, 60px 0 #F63911, 10px 10px #F63911, 20px 10px #F63911,
-        40px 0px #F63911, 30px 10px #F63911, 40px 10px #F63911, 50px 10px #F63911, 60px 10px #F63911, 70px 10px #F63911,
-        90px 10px #F63911, 10px 20px #8C5610, 20px 20px #8C5610, 30px 20px #8C5610, 10px 30px #8C5610, 0px 30px #8C5610,
-        0px 40px #8C5610, 20px 40px #8C5610, 30px 40px #8C5610, 0px 50px #8C5610, 10px 50px #8C5610, 10px 30px #FFB56B,
-        10px 40px #FFB56B, 40px 40px #FFB56B, 40px 30px #FFB56B, 30px 30px #FFB56B, 40px 20px #FFB56B, 50px 20px #FFB56B,
-        50px 30px #FFB56B, 50px 40px #FFB56B, 50px 50px #FFB56B, 40px 50px #FFB56B, 30px 50px #FFB56B, 20px 50px #FFB56B,
-        20px 60px #FFB56B, 30px 60px #FFB56B, 40px 60px #FFB56B, 50px 60px #FFB56B, 60px 60px #FFB56B, 70px 60px #FFB56B,
-        80px 60px #FFB56B, 80px 40px #FFB56B, 60px 40px #FFB56B, 90px 40px #FFB56B, 100px 40px #FFB56B, 90px 30px #FFB56B,
-        80px 30px #FFB56B, 70px 30px #FFB56B, 70px 20px #FFB56B, 60px 20px #000000, 60px 30px #000000, 70px 40px #000000,
-        60px 50px #000000, 70px 50px #000000, 80px 50px #000000, 90px 50px #000000, 80px 10px #F63911, 20px 30px #FFB56B;
+    box-shadow: 20px 0 #f63911, 30px 0 #f63911, 50px 0 #f63911, 50px 0 #f63911,
+      60px 0 #f63911, 10px 10px #f63911, 20px 10px #f63911, 40px 0px #f63911,
+      30px 10px #f63911, 40px 10px #f63911, 50px 10px #f63911, 60px 10px #f63911,
+      70px 10px #f63911, 90px 10px #f63911, 10px 20px #8c5610, 20px 20px #8c5610,
+      30px 20px #8c5610, 10px 30px #8c5610, 0px 30px #8c5610, 0px 40px #8c5610,
+      20px 40px #8c5610, 30px 40px #8c5610, 0px 50px #8c5610, 10px 50px #8c5610,
+      10px 30px #ffb56b, 10px 40px #ffb56b, 40px 40px #ffb56b, 40px 30px #ffb56b,
+      30px 30px #ffb56b, 40px 20px #ffb56b, 50px 20px #ffb56b, 50px 30px #ffb56b,
+      50px 40px #ffb56b, 50px 50px #ffb56b, 40px 50px #ffb56b, 30px 50px #ffb56b,
+      20px 50px #ffb56b, 20px 60px #ffb56b, 30px 60px #ffb56b, 40px 60px #ffb56b,
+      50px 60px #ffb56b, 60px 60px #ffb56b, 70px 60px #ffb56b, 80px 60px #ffb56b,
+      80px 40px #ffb56b, 60px 40px #ffb56b, 90px 40px #ffb56b, 100px 40px #ffb56b,
+      90px 30px #ffb56b, 80px 30px #ffb56b, 70px 30px #ffb56b, 70px 20px #ffb56b,
+      60px 20px #000000, 60px 30px #000000, 70px 40px #000000, 60px 50px #000000,
+      70px 50px #000000, 80px 50px #000000, 90px 50px #000000, 80px 10px #f63911,
+      20px 30px #ffb56b;
+  }
+  
+  #mario-body {
+    width: 10px;
+    height: 10px;
+    box-shadow: 0px 70px #f63911, 10px 70px #f63911, 20px 70px #114bf6,
+      30px 70px #f63911, 40px 70px #f63911, 50px 70px #f63911, 60px 70px #114bf6,
+      70px 70px #f63911, 80px 70px #f63911, -10px 80px #f63911, 0px 80px #f63911,
+      10px 80px #f63911, 20px 80px #114bf6, 30px 80px #f63911, 40px 80px #f63911,
+      50px 80px #f63911, 60px 80px #114bf6, 70px 80px #f63911, 80px 80px #f63911,
+      90px 80px #f63911, -20px 90px #f63911, -10px 90px #f63911, 0px 90px #f63911,
+      10px 90px #f63911, 20px 90px #114bf6, 30px 90px #114bf6, 30px 90px #114bf6,
+      40px 90px #114bf6, 50px 90px #114bf6, 60px 90px #114bf6, 70px 90px #f63911,
+      80px 90px #f63911, 90px 90px #f63911, 100px 90px #f63911,
+      -20px 100px #ffb56b, -10px 100px #ffb56b, 0px 100px #f63911,
+      10px 100px #114bf6, 20px 100px #f3ff6b, 30px 100px #114bf6,
+      40px 100px #114bf6, 50px 100px #114bf6, 60px 100px #f3ff6b,
+      70px 100px #114bf6, 80px 100px #f63911, 90px 100px #ffb56b,
+      100px 100px #ffb56b, -20px 110px #ffb56b, -10px 110px #ffb56b,
+      0px 110px #ffb56b, 10px 110px #114bf6, 20px 110px #114bf6,
+      30px 110px #114bf6, 40px 110px #114bf6, 50px 110px #114bf6,
+      60px 110px #114bf6, 70px 110px #114bf6, 80px 110px #ffb56b,
+      90px 110px #ffb56b, 100px 110px #ffb56b, -20px 120px #ffb56b,
+      -10px 120px #ffb56b, 0px 120px #114bf6, 10px 120px #114bf6,
+      20px 120px #114bf6, 30px 120px #114bf6, 40px 120px #114bf6,
+      40px 120px #114bf6, 50px 120px #114bf6, 60px 120px #114bf6,
+      70px 120px #114bf6, 80px 120px #114bf6, 90px 120px #ffb56b,
+      100px 120px #ffb56b, 0px 130px #114bf6, 10px 130px #114bf6,
+      20px 130px #114bf6, 60px 130px #114bf6, 70px 130px #114bf6,
+      80px 130px #114bf6, -10px 140px #833d05, 0px 140px #833d05,
+      10px 140px #833d05, 70px 140px #833d05, 80px 140px #833d05,
+      90px 140px #833d05, -20px 150px #833d05, -10px 150px #833d05,
+      0px 150px #833d05, 10px 150px #833d05, 70px 150px #833d05,
+      80px 150px #833d05, 90px 150px #833d05, 100px 150px #833d05;
+  }
+  
+
+  /* attribution styling */
+
+.attribution {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+
+    font-size: 12px;
+    text-align: center;
+    color: black;
 }
 
-#mario-body {
-    width: 10px;
-    height: 10px;
-    box-shadow:
-        0px 70px #F63911, 10px 70px #F63911, 20px 70px #114BF6, 30px 70px #F63911, 40px 70px #F63911, 50px 70px #F63911, 60px 70px #114BF6, 70px 70px #F63911, 80px 70px #F63911,
-        -10px 80px #F63911, 0px 80px #F63911, 10px 80px #F63911, 20px 80px #114BF6, 30px 80px #F63911, 40px 80px #F63911, 50px 80px #F63911, 60px 80px #114BF6, 70px 80px #F63911, 80px 80px #F63911, 90px 80px #F63911,
-        -20px 90px #F63911, -10px 90px #F63911, 0px 90px #F63911, 10px 90px #F63911, 20px 90px #114BF6, 30px 90px #114BF6, 30px 90px #114BF6, 40px 90px #114BF6, 50px 90px #114BF6, 60px 90px #114BF6, 70px 90px #F63911, 80px 90px #F63911, 90px 90px #F63911, 100px 90px #F63911,
-        -20px 100px #FFB56B, -10px 100px #FFB56B, 0px 100px #F63911, 10px 100px #114BF6, 20px 100px #f3ff6b, 30px 100px #114BF6, 40px 100px #114BF6, 50px 100px #114BF6, 60px 100px #f3ff6b, 70px 100px #114BF6, 80px 100px #F63911, 90px 100px #FFB56B, 100px 100px #FFB56B;
+.attribution a {
+    color: orangered;
 }
